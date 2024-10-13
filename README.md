@@ -1,7 +1,3 @@
-Here’s a detailed and user-friendly README for your project. It outlines each step required to run the project, including installation, configuration, and usage.
-
----
-
 # 📰 Fake News Detector Telegram Bot
 
 This project is a **Telegram bot** that helps users determine whether a news article is fake or real using a machine learning model trained on fake and real news articles. The bot provides commands for prediction, information about the model, help, and more. It also sends users visual insights, such as confusion matrices and classification reports, to explain the model's performance.
@@ -14,6 +10,9 @@ This project is a **Telegram bot** that helps users determine whether a news art
 5. [Running the Bot](#running-the-bot)
 6. [Bot Commands](#bot-commands)
 7. [Project Structure](#project-structure)
+8. [Team](#team)
+9. [Contributing](#contributing)
+10. [License](#license)
 
 ## ⭐ Features
 - Predict whether a news article is real or fake using a logistic regression model.
@@ -40,33 +39,37 @@ cd fake-news-detector-bot
 
 ### Step 2: Create and Activate a Virtual Environment
 It's recommended to use a virtual environment for Python projects. To create and activate one, run the following commands:
+
 ```bash
 python3 -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 ```
 
 ### Step 3: Install Dependencies
-Install the required Python packages:
+After activating the virtual environment, install the required Python packages using `requirements.txt`:
+
 ```bash
 pip install -r requirements.txt
 ```
 
-### Step 4: Download Model and Vectorizer
-Place the pre-trained model and vectorizer files in the root directory:
-- Download the [Logistic Regression Model](https://path-to-your-logistic-model) and save it as `logistic_regression_model_v2.pkl`.
-- Download the [TF-IDF Vectorizer](https://path-to-your-tfidf-vectorizer) and save it as `tfidf_vectorizer_v2.pkl`.
+### Step 4: Create the `.env` File
+Create a `.env` file in the root directory to store your sensitive configuration information like the Telegram Bot Token:
+
+1. Create a file called `.env`:
+   ```bash
+   touch .env
+   ```
+
+2. Open the `.env` file and place your bot token inside as follows:
+   ```
+   BOT_TOKEN=your-telegram-bot-token-here
+   ```
 
 ## ⚙️ Configuration
 
-### Step 1: Set Up Your Bot Token
-In the `config.py` file, add your Telegram bot token (provided by BotFather):
-```python
-# config.py
-BOT_TOKEN = 'your-telegram-bot-token-here'
-```
+The project reads the bot token from the `.env` file. Ensure the token is placed there correctly.
 
-### Step 2: Directory Setup
-Ensure that the required files are in the correct directories:
+Additionally, ensure that the required files are in the correct directories:
 - **Model and Vectorizer**: Ensure that the logistic regression model and TF-IDF vectorizer are in the root directory.
 - **CSV Training Data**: Ensure the file `fake_and_real_news.csv` is located at `models/data/fake_and_real_news.csv`.
 
@@ -99,32 +102,51 @@ Here’s a list of commands the bot supports:
 ```
 fake-news-detector-bot/
 │
-├── bot.py                   # Entry point for running the bot
-├── model_handler.py          # Handles model loading and predictions
-├── utils.py                  # Utility functions
-├── config.py                 # Configuration settings (e.g., bot token)
-├── logging_config.py         # Logging setup
-├── requirements.txt          # List of dependencies
-├── models/                   # Directory for storing model-related files
+├── bot.py                  
+├── model_handler.py          
+├── utils.py                  
+├── config.py                 
+├── logging_config.py         
+├── requirements.txt          
+├── .env                      
+├── models/                   
 │   └── data/
 │       └── fake_and_real_news.csv  # Training data
-├── images/                   # Directory for storing visualizations (confusion matrix, classification report, etc.)
-└── commands/                 # Directory for bot commands
-    ├── start.py              # /start command handler
-    ├── predict.py            # /predict command handler
-    ├── help.py               # /help command handler
-    ├── about.py              # /about command handler
-    └── statistics.py         # /statistics command handler
+├── images/                   (confusion matrix, classification report, etc.)
+└── commands/                
+    ├── start.py              
+    ├── predict.py           
+    ├── help.py              
+    ├── about.py              
+    └── statistics.py         
 ```
 
-## 🔍 Notes
-- **Modular Code**: The project is structured in a modular way. Each command and functionality is separated into different files for better maintainability and scalability.
-- **Logging**: The bot uses logging to track errors and important events. Logs are stored in `bot.log`.
-- **Visual Insights**: The bot provides visualizations such as confusion matrix, classification report, and dataset distribution via inline buttons.
+## 👨‍💻 Team
+This project was developed by the following team members:
 
-## 📞 Support
-If you encounter any issues or have questions, feel free to reach out by creating an issue on the repository or contacting me at `your-email@example.com`.
+<!-- Adding names with link to their Github -->
+
+
+Feel free to contact us for any questions or issues related to this project.
+
+## 🤝 Contributing
+
+Contributions are welcome! If you would like to contribute to the project, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature-branch`).
+3. Commit your changes (`git commit -am 'Add new feature'`).
+4. Push to the branch (`git push origin feature-branch`).
+5. Create a pull request explaining your changes.
+
+All contributions will be reviewed, and feedback will be provided if necessary.
+
+## 📜 License
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ---
 
-This README provides a comprehensive, step-by-step guide for setting up and running the Telegram bot project. Let me know if you'd like any further tweaks!
+### Notes
+- **Modular Code**: The project is structured in a modular way. Each command and functionality is separated into different files for better maintainability and scalability.
+- **Logging**: The bot uses logging to track errors and important events. Logs are stored in `logs/bot.log`.
+- **Visual Insights**: The bot provides visualizations such as confusion matrix, classification report, and dataset distribution via inline buttons.
