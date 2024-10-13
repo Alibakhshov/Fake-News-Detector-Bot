@@ -10,9 +10,10 @@ This project is a **Telegram bot** that helps users determine whether a news art
 5. [Running the Bot](#running-the-bot)
 6. [Bot Commands](#bot-commands)
 7. [Project Structure](#project-structure)
-8. [Team](#team)
-9. [Contributing](#contributing)
-10. [License](#license)
+8. [Demo](#demo)
+9. [Team](#team)
+10. [Contributing](#contributing)
+11. [License](#license)
 
 ## Features
 - Predict whether a news article is real or fake using a logistic regression model.
@@ -124,24 +125,45 @@ Here’s a list of commands the bot supports:
 ```
 Fake-News-Detector-Bot/
 │
-├── bot.py                  
+├── bot.py                   
 ├── model_handler.py          
 ├── utils.py                  
-├── config.py                 
+├── config.py                
 ├── logging_config.py         
 ├── requirements.txt          
 ├── .env                      
 ├── models/                   
 │   └── data/
-│       └── fake_and_real_news.csv
+│       └── fake_and_real_news.csv  
 ├── images/(confusion matrix, classification report, etc.)
-└── commands/                
+└── commands/                 
     ├── start.py              
-    ├── predict.py           
-    ├── help.py              
+    ├── predict.py            
+    ├── help.py               
     ├── about.py              
-    └── statistics.py         
+    └── statistics.py        
 ```
+
+---
+
+## Demo
+
+Here’s a quick demo of the bot in action:
+
+1. **/start Command**:  
+   ![Start Command](https://path-to-your-demo-image/start_command.png)
+
+2. **/predict Command (Sample Prediction)**:  
+   ![Predict Command](https://path-to-your-demo-image/predict_command.png)
+
+3. **/about Command with Inline Buttons**:  
+   ![About Command](https://path-to-your-demo-image/about_command.png)
+
+4. **Confusion Matrix Visualization**:  
+   ![Confusion Matrix](https://path-to-your-demo-image/confusion_matrix.png)
+
+5. **Dataset Distribution**:  
+   ![Dataset Distribution](https://path-to-your-demo-image/dataset_distribution.png)
 
 ---
 
@@ -150,10 +172,8 @@ This project was developed by the following team members:
 
 [Tariq Aziz](https://github.com/tariqaxix/) |
 [Rauf Alibakhshov](https://github.com/Alibakhshov/) |
-[Jitse dekekeyser](https://github.com/) |
+[Jitse Dekeyser](https://github.com/) |
 [Cholpon Ishenbekova](https://github.com/)
-
-
 
 Feel free to contact us for any questions or issues related to this project.
 
@@ -182,3 +202,4 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 - **Modular Code**: The project is structured in a modular way. Each command and functionality is separated into different files for better maintainability and scalability.
 - **Logging**: The bot uses logging to track errors and important events. Logs are stored in `logs/bot.log`.
 - **Visual Insights**: The bot provides visualizations such as confusion matrix, classification report, and dataset distribution via inline buttons.
+
