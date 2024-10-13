@@ -77,7 +77,7 @@ Create a `.env` file in the root directory to store your sensitive configuration
 The project reads the bot token from the `.env` file. Ensure the token is placed there correctly.
 
 Additionally, ensure that the required files are in the correct directories:
-- **Model and Vectorizer**: Ensure that the logistic regression model and TF-IDF vectorizer are in the root directory.
+- **Model and Vectorizer**: Ensure that the logistic regression model and TF-IDF vectorizer are in the `models` folder.
 - **CSV Training Data**: Ensure the file `fake_and_real_news.csv` is located at `models/data/fake_and_real_news.csv`.
 
 ---
@@ -139,7 +139,11 @@ Fake-News-Detector-Bot/
 ## Team
 This project was developed by the following team members:
 
-<!-- Adding names with link to their Github -->
+[Tariq Aziz](https://github.com/tariqaxix/)
+[Rauf Alibakhshov](https://github.com/Alibakhshov/)
+[Jitse dekekeyser](https://github.com/)
+[Cholpon Ishenbekova](https://github.com/)
+
 
 
 Feel free to contact us for any questions or issues related to this project.
