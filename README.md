@@ -38,6 +38,9 @@ Before running the project, ensure you have the following installed:
 Clone the project repository to your local machine:
 ```bash
 git clone https://github.com/Alibakhshov/Fake-News-Detector-Bot.git
+```
+
+```bash
 cd Fake-News-Detector-Bot
 ```
 
@@ -46,7 +49,13 @@ It's recommended to use a virtual environment for Python projects. To create and
 
 ```bash
 python3 -m venv venv
+```
+
+```bash
 source venv/bin/activate  # Linux/Mac:
+```
+
+```bash
 .\venv\Scripts\activate   # Windows
 ```
 
@@ -139,9 +148,9 @@ Fake-News-Detector-Bot/
 ## Team
 This project was developed by the following team members:
 
-[Tariq Aziz](https://github.com/tariqaxix/)
-[Rauf Alibakhshov](https://github.com/Alibakhshov/)
-[Jitse dekekeyser](https://github.com/)
+[Tariq Aziz](https://github.com/tariqaxix/) |
+[Rauf Alibakhshov](https://github.com/Alibakhshov/) |
+[Jitse dekekeyser](https://github.com/) |
 [Cholpon Ishenbekova](https://github.com/)
 
 
