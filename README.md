@@ -14,7 +14,7 @@ This project is a **Telegram bot** that helps users determine whether a news art
 9. [Contributing](#contributing)
 10. [License](#license)
 
-## ⭐ Features
+## Features
 - Predict whether a news article is real or fake using a logistic regression model.
 - View detailed statistics, confusion matrix, classification report, and dataset distribution.
 - Receive training data used for model creation.
