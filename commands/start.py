@@ -1,6 +1,10 @@
 def start_command(bot, message):
+    user_first_name = message.from_user.first_name  # Get the user's first name
     welcome_message = (
-        "Welcome to the Fake/Real News Detector Bot! "
-        "Use /predict to check if a news article is fake or real."
+        f"👋 Hi *{user_first_name}*! Welcome to the *Fake/Real News Detector Bot*! 🎉\n\n"
+        "I'm here to assist you in finding out if the news you're reading is *fake* or *real*. 📰✅❌\n\n"
+        "All you need to do is type /predict and paste the article you'd like me to check. "
+        "I’ll take care of the rest! Let's make sure you get the facts straight! 💪\n\n"
+        "Feel free to ask for /help if you need any guidance!"
     )
-    bot.send_message(message.chat.id, welcome_message)
+    bot.send_message(message.chat.id, welcome_message, parse_mode="Markdown")
