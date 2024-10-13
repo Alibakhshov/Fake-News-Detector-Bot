@@ -1,5 +1,5 @@
 def start_command(bot, message):
-    user_first_name = message.from_user.first_name  # Get the user's first name
+    user_first_name = message.from_user.first_name if message.from_user.first_name else "there"
     welcome_message = (
         f"👋 Hi *{user_first_name}*! Welcome to the *Fake/Real News Detector Bot*! 🎉\n\n"
         "I'm here to assist you in finding out if the news you're reading is *fake* or *real*. 📰✅❌\n\n"
