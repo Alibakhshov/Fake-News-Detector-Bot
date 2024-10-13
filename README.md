@@ -170,7 +170,7 @@ This project was developed by the following team members:
 
 [Tariq Aziz](https://github.com/tariqaxix/) |
 [Rauf Alibakhshov](https://github.com/Alibakhshov/) |
-[Jitse Dekeyser](https://github.com/) |
+[Jitse Dekeyser](https://github.com/jitseD/) |
 [Cholpon Ishenbekova](https://github.com/)
 
 Feel free to contact us for any questions or issues related to this project.
