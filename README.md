@@ -148,22 +148,20 @@ Fake-News-Detector-Bot/
 
 ## Demo
 
-Here’s a quick demo of the bot in action:
+1. **General information**
+    ![General Information](images/demo/1.png)
 
-1. **/start Command**:  
-   ![Start Command](https://path-to-your-demo-image/start_command.png)
+2. **Menu**
+    ![Menu](images/demo/menu.png)
 
-2. **/predict Command (Sample Prediction)**:  
-   ![Predict Command](https://path-to-your-demo-image/predict_command.png)
+3. **/start Command**:  
+   ![Start Command](images/demo/start.png)
 
-3. **/about Command with Inline Buttons**:  
-   ![About Command](https://path-to-your-demo-image/about_command.png)
+4. **/predict Command (Sample Prediction)**:  
+   ![Predict Command](images/demo/predict.png)
 
-4. **Confusion Matrix Visualization**:  
-   ![Confusion Matrix](https://path-to-your-demo-image/confusion_matrix.png)
-
-5. **Dataset Distribution**:  
-   ![Dataset Distribution](https://path-to-your-demo-image/dataset_distribution.png)
+5. **/about Command with Inline Buttons**:  
+   ![About Command](images/demo/about.png)
 
 ---
 
