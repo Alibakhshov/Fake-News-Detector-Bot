@@ -22,11 +22,15 @@ This project is a **Telegram bot** that helps users determine whether a news art
 - Robust logging and error handling.
 - Friendly inline buttons for quick navigation.
 
+---
+
 ## 🛠 Prerequisites
 Before running the project, ensure you have the following installed:
 - **Python 3.8+**
 - **pip** (Python package manager)
 - A **Telegram Bot Token** from [BotFather](https://core.telegram.org/bots#botfather)
+
+---
 
 ## 🖥️ Installation
 
@@ -65,6 +69,8 @@ Create a `.env` file in the root directory to store your sensitive configuration
    BOT_TOKEN=your-telegram-bot-token-here
    ```
 
+---
+
 ## ⚙️ Configuration
 
 The project reads the bot token from the `.env` file. Ensure the token is placed there correctly.
@@ -72,6 +78,8 @@ The project reads the bot token from the `.env` file. Ensure the token is placed
 Additionally, ensure that the required files are in the correct directories:
 - **Model and Vectorizer**: Ensure that the logistic regression model and TF-IDF vectorizer are in the root directory.
 - **CSV Training Data**: Ensure the file `fake_and_real_news.csv` is located at `models/data/fake_and_real_news.csv`.
+
+---
 
 ## 🚀 Running the Bot
 
@@ -87,6 +95,8 @@ The bot will start polling and be ready to receive commands on Telegram.
 - Open Telegram and search for your bot by its username.
 - Type `/start` to begin interacting with the bot.
 
+---
+
 ## 🤖 Bot Commands
 
 Here’s a list of commands the bot supports:
@@ -96,6 +106,8 @@ Here’s a list of commands the bot supports:
 - **/about**: Detailed information about the bot’s machine learning model and training process.
 - **/statistics**: Displays general statistics about the bot's performance.
 - **Inline buttons**: Access visual insights (e.g., confusion matrix, classification report) via inline buttons.
+
+---
 
 ## 🗂️ Project Structure
 
@@ -111,8 +123,8 @@ fake-news-detector-bot/
 ├── .env                      
 ├── models/                   
 │   └── data/
-│       └── fake_and_real_news.csv  # Training data
-├── images/                   (confusion matrix, classification report, etc.)
+│       └── fake_and_real_news.csv
+├── images/(confusion matrix, classification report, etc.)
 └── commands/                
     ├── start.py              
     ├── predict.py           
@@ -121,7 +133,9 @@ fake-news-detector-bot/
     └── statistics.py         
 ```
 
-## 👨‍💻 Team
+---
+
+## Team
 This project was developed by the following team members:
 
 <!-- Adding names with link to their Github -->
@@ -129,7 +143,9 @@ This project was developed by the following team members:
 
 Feel free to contact us for any questions or issues related to this project.
 
-## 🤝 Contributing
+---
+
+## Contributing
 
 Contributions are welcome! If you would like to contribute to the project, please follow these steps:
 
@@ -141,7 +157,9 @@ Contributions are welcome! If you would like to contribute to the project, pleas
 
 All contributions will be reviewed, and feedback will be provided if necessary.
 
-## 📜 License
+---
+
+## License
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ---
