@@ -24,7 +24,7 @@ This project is a **Telegram bot** that helps users determine whether a news art
 
 ---
 
-## 🛠 Prerequisites
+## Prerequisites
 Before running the project, ensure you have the following installed:
 - **Python 3.8+**
 - **pip** (Python package manager)
@@ -32,13 +32,13 @@ Before running the project, ensure you have the following installed:
 
 ---
 
-## 🖥️ Installation
+## Installation
 
 ### Step 1: Clone the Repository
 Clone the project repository to your local machine:
 ```bash
-git clone https://github.com/your-username/fake-news-detector-bot.git
-cd fake-news-detector-bot
+git clone https://github.com/Alibakhshov/Fake-News-Detector-Bot.git
+cd Fake-News-Detector-Bot
 ```
 
 ### Step 2: Create and Activate a Virtual Environment
@@ -46,7 +46,8 @@ It's recommended to use a virtual environment for Python projects. To create and
 
 ```bash
 python3 -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+source venv/bin/activate  # Linux/Mac:
+.\venv\Scripts\activate   # Windows
 ```
 
 ### Step 3: Install Dependencies
@@ -71,7 +72,7 @@ Create a `.env` file in the root directory to store your sensitive configuration
 
 ---
 
-## ⚙️ Configuration
+## Configuration
 
 The project reads the bot token from the `.env` file. Ensure the token is placed there correctly.
 
@@ -81,7 +82,7 @@ Additionally, ensure that the required files are in the correct directories:
 
 ---
 
-## 🚀 Running the Bot
+## Running the Bot
 
 ### Step 1: Start the Bot
 Once everything is set up, run the following command to start the bot:
@@ -97,7 +98,7 @@ The bot will start polling and be ready to receive commands on Telegram.
 
 ---
 
-## 🤖 Bot Commands
+## Bot Commands
 
 Here’s a list of commands the bot supports:
 - **/start**: Welcome message and introduction.
@@ -109,10 +110,10 @@ Here’s a list of commands the bot supports:
 
 ---
 
-## 🗂️ Project Structure
+## Project Structure
 
 ```
-fake-news-detector-bot/
+Fake-News-Detector-Bot/
 │
 ├── bot.py                  
 ├── model_handler.py          
