@@ -8,4 +8,4 @@ def predict_command(bot, message):
     def handle_text(msg):
         news_text = preprocess_text(msg.text)
         prediction = predict_news(news_text)
-        bot.send_message(msg.chat.id, f"The news article is: {prediction}")
+        bot.send_message(msg.chat.id, f"{prediction}", parse_mode="Markdown")
