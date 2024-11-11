@@ -2,9 +2,16 @@
 
 import pickle
 import logging
+
+import os
+import re
+from datetime import datetime
+from textblob import TextBlob
+from transformers import pipeline
 from sklearn.exceptions import NotFittedError
 from sklearn.feature_extraction.text import TfidfVectorizer
-import os
+from textblob import TextBlob
+from datetime import datetime
 
 # Load the trained model and vectorizer
 with open('models/logistic_regression_model_trained.pkl', 'rb') as model_file:
@@ -13,14 +20,6 @@ with open('models/logistic_regression_model_trained.pkl', 'rb') as model_file:
 with open('models/tfidf_vectorizer.pkl', 'rb') as vectorizer_file:
     vectorizer = pickle.load(vectorizer_file)
 
-import re
-from datetime import datetime
-from textblob import TextBlob
-from transformers import pipeline
-
-from transformers import pipeline
-from textblob import TextBlob
-from datetime import datetime
 
 # Load models (classifier and summarizer)
 classifier = pipeline("text-classification", model="distilbert-base-uncased-finetuned-sst-2-english")
